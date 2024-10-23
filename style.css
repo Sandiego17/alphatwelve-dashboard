@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-color: #E4E9F7;
+  --primary-color: #8576FF;
+  --primary-color-dark: #484554;
+  --primary-color-light: #F6F5FF;
+  --select-color-100: #FCF7FF;
+  --select-color-200: #ADA9BB;
+  --select-color-300: 6A6676;
+  --sidebar-color: #FFF;
+  --text-color: #707070;
+  --toggle-color: #DDD;
+
+  /* Transition */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body {
+  background: var(--body-color);
+  height: 100vh;
+  transition: var(--tran-04);
+  display: flex;
+}
+
+body.dark {
+  --body-color: #18191A;
+  --primary-color: #3A3B3C;
+  --primary-color-light: #3A3B3C;
+  --sidebar-color: #242526;
+  --text-color: #CCC;
+  --toggle-color: #FFF;
+}
+
+/* ====== Reusable CSS ====== */
+.display-none {
+  display: none;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
