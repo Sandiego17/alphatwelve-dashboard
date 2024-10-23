@@ -229,3 +229,18 @@ body.dark .switch::before {
   left: 24px;
 }
 
+/* ====== HomePage ====== */
+.home {
+  background: var(--body-color);
+  height: 100vh;
+  padding: 16px;
+  transition: var(--tran-05);
+  width: 100%;
+}
+
+.home .text {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 500;
+  padding: 8px 40px;
+}
