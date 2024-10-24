@@ -66,7 +66,7 @@ body.dark {
 /* ====== SideBar ====== */
 .sidebar {
   background: var(--section-color);
-  height: 100%;
+  height: 1024px;
   width: 250px;
   padding: 8px;
   transition: var(--tran-05);
@@ -156,12 +156,12 @@ header .image-text .header-text {
 }
 
 .menu li:hover {
-  background: #FCF7FF;
+  background: var(--menu-hover-color);
   & .icon {
     filter: invert(49%) sepia(37%) saturate(5361%) hue-rotate(223deg) brightness(104%) contrast(102%);
   }
   & .text {
-    color: #8576FF;
+    color: var(--text-hover-color);
   }
 }
 
@@ -242,7 +242,6 @@ body.dark .switch::before {
 .home {
   background: var(--home-color);
   border:1px solid #F2F2F7;
-  height: 100vh;
   padding: 40px 28px;
   transition: var(--tran-05);
   width: 100%;
@@ -276,7 +275,9 @@ body.dark .switch::before {
   border-radius: 4px;
   height: 88px;
   padding: 16px;
-  width: 260px;
+  flex-grow: 1;
+  min-width: 200px;
+  max-width: 260px;
 }
 
 body.dark .home,
