@@ -327,3 +327,39 @@ body.dark .event-section .event-card {
   color: #F43F5E;
 }
 
+.container .section-caption {
+  color: var(--home-header);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.container .event-section {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.event-section .event-card {
+  background: var(--section-color);
+  border: 1px solid #F2F2F7;
+  border-radius: 6px;
+  height: 320px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 480px;
+  max-width: 536px;
+}
+
+.chart-card {
+  padding: 16px;
+}
+
+.event-card .chart {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
