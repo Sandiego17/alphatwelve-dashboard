@@ -8,6 +8,7 @@ const linkItems = document.querySelectorAll(".link-item");
 const modeElement = document.querySelector(".mode");
 const logos = document.querySelectorAll(".logo");
 const toggleIcons = document.querySelectorAll(".toggle-icon");
+const ctx = document.getElementById("barChart");
 
 // Toggle sidebar collapse
 toggle.addEventListener("click", () => {
@@ -45,4 +46,41 @@ modeSwitch.addEventListener("click", () => {
   });
 
   modeText.textContent = body.classList.contains("dark") ? "Light Mode" : "Dark Mode";
+});
+
+// Initialize the bar chart
+const barChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    datasets: [{
+      label: '',
+      data: [700, 900, 800, 400, 1000, 500, 850, 350, 840, 650, 950, 600],
+      borderWidth: 1,
+      backgroundColor: '#8576FF'
+    }]
+  },
+  options: {
+    scales: {
+      x: {
+        ticks: {
+          color: '#64748B'
+        },
+        grid: {
+          color: '#E2E8F0',
+          borderDash: [5, 5]
+        }
+      },
+      y: {
+        ticks: {
+          color: '#64748B',
+          stepSize: 200
+        },
+        grid: {
+          color: '#E2E8F0',
+          borderDash: [10, 5]
+        }
+      }
+    }
+  }
 });
