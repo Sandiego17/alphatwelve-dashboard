@@ -10,6 +10,7 @@ const logos = document.querySelectorAll(".logo");
 const toggleIcons = document.querySelectorAll(".toggle-icon");
 const ctx = document.getElementById("barChart");
 const carouselBtn = document.querySelectorAll("[data-carousel-button]");
+const lines = document.querySelectorAll(".line");
 
 // Toggle sidebar collapse
 toggle.addEventListener("click", () => {
@@ -86,20 +87,49 @@ const barChart = new Chart(ctx, {
   }
 });
 
-// Carousel Functionalities
+// Carousel Functionality for the Previous/Next Buttons
 carouselBtn.forEach(button => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]");
+    const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
     
     const activeSlide = slides.querySelector("[data-active]");
     let newIndex = [...slides.children].indexOf(activeSlide) + offset;
     if (newIndex < 0) newIndex = slides.children.length - 1;
     if (newIndex >= slides.children.length) newIndex = 0;
 
-    slides.children[newIndex].dataset.active = true;
-    delete activeSlide.dataset.active;
-  })
-})
+    switchSlide(newIndex);
+  });
+});
+
+// Function to update the lines and slides
+const switchSlide = (newIndex) => {
+  const slides = document.querySelector("[data-slides]");
+  const activeSlide = slides.querySelector("[data-active]");
+  
+  slides.children[newIndex].dataset.active = true;
+  delete activeSlide.dataset.active;
+
+  updateLines(newIndex);
+}
+
+// Function to update the lines based on active slide
+const updateLines = (activeIndex) => {
+  lines.forEach((line, index) => {
+    if (index === activeIndex) {
+      line.classList.add("active");
+    } else {
+      line.classList.remove("active");
+    }
+  });
+}
+
+// Add event listener to each line for switching slides
+lines.forEach((line, index) => {
+  line.addEventListener("click", () => {
+    switchSlide(index);
+  });
+});
+
+// Initial line setup (so the first line is active when the page loads)
+updateLines(0);
