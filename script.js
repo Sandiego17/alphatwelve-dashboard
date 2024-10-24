@@ -11,6 +11,10 @@ const toggleIcons = document.querySelectorAll(".toggle-icon");
 const ctx = document.getElementById("barChart");
 const carouselBtn = document.querySelectorAll("[data-carousel-button]");
 const lines = document.querySelectorAll(".line");
+const carousel = document.querySelector(".carousel");
+
+const slideInterval = 5000; // Auto-slide interval in milliseconds (5 seconds)
+let autoSlideInterval; // To store the interval ID
 
 // Toggle sidebar collapse
 toggle.addEventListener("click", () => {
@@ -99,6 +103,7 @@ carouselBtn.forEach(button => {
     if (newIndex >= slides.children.length) newIndex = 0;
 
     switchSlide(newIndex);
+    resetAutoSlide(); // Reset the interval when user interacts
   });
 });
 
@@ -110,6 +115,7 @@ const switchSlide = (newIndex) => {
   slides.children[newIndex].dataset.active = true;
   delete activeSlide.dataset.active;
 
+  // Update the lines
   updateLines(newIndex);
 }
 
@@ -128,8 +134,37 @@ const updateLines = (activeIndex) => {
 lines.forEach((line, index) => {
   line.addEventListener("click", () => {
     switchSlide(index);
+    resetAutoSlide(); // Reset the interval when user interacts
   });
 });
 
-// Initial line setup (so the first line is active when the page loads)
-updateLines(0);
+// Function to automatically slide through items
+const startAutoSlide = () => {
+  autoSlideInterval = setInterval(() => {
+    const slides = document.querySelector("[data-slides]");
+    const activeSlide = slides.querySelector("[data-active]");
+    let newIndex = [...slides.children].indexOf(activeSlide) + 1;
+    
+    if (newIndex >= slides.children.length) newIndex = 0;
+
+    switchSlide(newIndex);
+  }, slideInterval);
+}
+
+// Function to reset the auto-slide interval when user interacts
+const resetAutoSlide = () => {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+carousel.addEventListener("mouseenter", () => {
+  clearInterval(autoSlideInterval); // Pause on hover
+});
+
+carousel.addEventListener("mouseleave", () => {
+  startAutoSlide(); // Resume when the mouse leaves
+});
+
+// Initial setup
+updateLines(0); // Activate the first line initially
+startAutoSlide(); // Start the auto-slide when the page loads
