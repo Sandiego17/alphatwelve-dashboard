@@ -439,7 +439,7 @@ body.dark .event-section .event-card {
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
-  padding: 16px;
+  padding: 12px 16px;
 }
 
 .slider-text p {
@@ -447,5 +447,28 @@ body.dark .event-section .event-card {
   font-weight: 200;
   line-height: 16px;
   padding: 0 16px 16px 16px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  z-index: 1;
+}
+
+.line {
+  width: 16px;
+  height: 4px;
+  background-color: #979592;
+  margin: 0 2px;
+  border-radius: 2px;
+  transition: var(--tran-05);
+  cursor: pointer;
+}
+
+.line.active {
+  background-color: #FFF;
 }
 
