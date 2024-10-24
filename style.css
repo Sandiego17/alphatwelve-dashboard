@@ -13,6 +13,7 @@
   --primary-color: #8576FF;
   --primary-color-dark: #484554;
   --primary-color-light: #F6F5FF;
+  --menu-hover-color: #FCF7FF;
   --select-color-100: #FCF7FF;
   --select-color-200: #ADA9BB;
   --select-color-300: 6A6676;
@@ -22,6 +23,7 @@
   --home-text-color: #64748B;
   --home-header: #000;
   --toggle-color: #DDD;
+  --text-hover-color: #8576FF;
 
   /* Transition */
   --tran-02: all 0.2s ease;
@@ -32,7 +34,6 @@
 
 body {
   background: var(--body-color);
-  height: 100vh;
   transition: var(--tran-04);
   display: flex;
 }
@@ -47,6 +48,8 @@ body.dark {
   --home-header: #CCC;
   --home-text-color: #FFF;
   --toggle-color: #FFF;
+  --menu-hover-color: #8576FF;
+  --text-hover-color: #FFF;
 }
 
 /* ====== Reusable CSS ====== */
