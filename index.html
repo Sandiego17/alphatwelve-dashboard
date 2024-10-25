@@ -226,29 +226,41 @@
             <input type="text" class="search-bar" placeholder="Search..." />
             <img src="./assets/svgs/searchbar.svg" class="search-icon" alt="">
           </div>
-          <select class="dropdown date-dropdown">
-            <option>Date</option>
-            <!-- Add date options here -->
-          </select>
-          <select class="dropdown status-dropdown">
-            <option>Status</option>
-            <!-- Add status options here -->
-          </select>
-          <select class="dropdown name-dropdown">
-            <option>Name</option>
-            <!-- Add name options here -->
-          </select>
+          <div class="dropdown date-dropdown centered">
+            <select>
+              <option>Date</option>
+              <!-- Add date options here -->
+            </select>
+          </div>
+          <div class="dropdown status-dropdown centered">
+            <select>
+              <option>Status</option>
+              <!-- Add status options here -->
+            </select>
+          </div>
+          <div class="dropdown name-dropdown centered">
+            <select>
+              <option>Name</option>
+              <!-- Add name options here -->
+            </select>
+          </div>
           <span class="display-text">Displaying 100 results</span>
-          <label for="sort-dropdown" class="sort-dropdown-label">Sort:</label>
-          <select class="dropdown sort-dropdown">
-            <option>Most Recent</option>
-            <!-- Add sort options here -->
-          </select>
-          <button class="menu-button">⁝</button>
-          <button class="export-button">
-            <img src="./assets/svgs/download.svg" class="export-icon" alt="">
-            <span>Export</span>
-          </button>
+          <div class="sorting align-center">
+            <label for="sort-dropdown" class="sort-dropdown-label">Sort:</label>
+            <div class="dropdown sort-dropdown centered">
+              <select>
+                <option>Most Recent</option>
+                <!-- Add sort options here -->
+              </select>
+            </div>
+          </div>
+          <div class="table-menu-btns align-center">
+            <button class="menu-button">⁝</button>
+            <button class="export-button">
+              <img src="./assets/svgs/download.svg" class="export-icon" alt="">
+              <span>Export</span>
+            </button>
+          </div>
         </div>
         <div class="table-body">
           <table>
