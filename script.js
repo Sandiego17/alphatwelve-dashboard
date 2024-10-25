@@ -17,6 +17,9 @@ const modal = document.getElementById("event-modal");
 const modalEventName = document.getElementById("modal-event-name");
 const modalEventDate = document.getElementById("modal-event-date");
 const modalEventDescription = document.getElementById("modal-event-description");
+const hamburgerMenu = document.getElementById("hamburger-menu");
+const asideContainer = document.querySelector(".aside-container");
+const mobileCloseBtn = document.querySelector (".mobile-close-btn");
 
 
 const slideInterval = 5000; // Auto-slide interval in milliseconds (5 seconds)
@@ -173,7 +176,7 @@ carousel.addEventListener("mouseleave", () => {
 
 // Modal - Open and populate on row click
 tableRows.forEach(row => {
-  row.addEventListener('click', () => {
+  row.addEventListener("click", () => {
     const eventName = row.cells[0].textContent;
     const eventDate = row.cells[1].textContent;
     modalEventName.textContent = eventName;
@@ -181,20 +184,34 @@ tableRows.forEach(row => {
     // Set a default or retrieved description here
     modalEventDescription.textContent = "Sample description for " + eventName;
 
-    modal.style.display = 'flex';
+    modal.style.display = "flex";
   });
 });
 
 // Close modal on click of close button
-document.querySelector('.close-btn').addEventListener('click', () => {
-  modal.style.display = 'none';
+document.querySelector(".close-btn").addEventListener("click", () => {
+  modal.style.display = "none";
 });
 
-// Close modal if clicked outside
-window.addEventListener('click', (event) => {
+// Close modal and mobile view sidebar menu if clicked outside
+window.addEventListener("click", (event) => {
   if (event.target === modal) {
-    modal.style.display = 'none';
+    modal.style.display = "none";
   }
+
+  if (event.target === asideContainer) {
+    asideContainer.style.display = "none";
+  }
+});
+
+// Open mobile view hamburger menu
+hamburgerMenu.addEventListener("click", () => {
+  asideContainer.style.display = "block"
+})
+
+// Close mobile view sidebar menu on click of close button
+mobileCloseBtn.addEventListener("click", () => {
+  asideContainer.style.display = "none";
 });
 
 // Initial setup
