@@ -31,6 +31,7 @@
   --progress-color: #3B82F6;
   --display-text-color: #334155;
   --modal-footer-bg-color: #F8FAFC;
+  --pagination-btn-border: #E2E8F0;
 
   /* Transition */
   --tran-02: all 0.2s ease;
@@ -298,7 +299,8 @@ body.dark .switch::before {
 
 body.dark .home,
 body.dark .card,
-body.dark .event-section .event-card {
+body.dark .event-section .event-card,
+body.dark .pagination .pagination-btn {
   border: none;
 }
 
@@ -516,10 +518,11 @@ body.dark .event-section .event-card {
 .search-bar,
 .dropdown,
 .menu-button,
-.export-button {
+.export-button,
+.edit-btn {
   background: var(--section-color);
   border: 1px solid #E2E8F0;
-  border-radius: 4px;
+  border-radius: 2px;
   color: var(--home-text-color);
   height: 36px;
   padding: 4px 8px;
@@ -528,7 +531,8 @@ body.dark .event-section .event-card {
 body.dark .search-bar,
 body.dark .dropdown,
 body.dark .menu-button,
-body.dark .export-button {
+body.dark .export-button,
+.delete-btn, .complete-btn {
   border: none;
 }
 
