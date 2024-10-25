@@ -216,6 +216,161 @@
     </div>
     <div class="container">
       <h1 class="section-caption">Events History</h1>
+      <div class="event-table">
+        <div class="table-menu">
+          <div class="search-bar-wrapper">
+            <input type="text" class="search-bar" placeholder="Search..." />
+            <img src="./assets/svgs/searchbar.svg" class="search-icon" alt="">
+          </div>
+          <select class="dropdown date-dropdown">
+            <option>Date</option>
+            <!-- Add date options here -->
+          </select>
+          <select class="dropdown status-dropdown">
+            <option>Status</option>
+            <!-- Add status options here -->
+          </select>
+          <select class="dropdown name-dropdown">
+            <option>Name</option>
+            <!-- Add name options here -->
+          </select>
+          <span class="display-text">Displaying 100 results</span>
+          <label for="sort-dropdown" class="sort-dropdown-label">Sort:</label>
+          <select class="dropdown sort-dropdown">
+            <option>Most Recent</option>
+            <!-- Add sort options here -->
+          </select>
+          <button class="menu-button">⁝</button>
+          <button class="export-button">
+            <img src="./assets/svgs/download.svg" class="export-icon" alt="">
+            <span>Export</span>
+          </button>
+        </div>
+        <div class="table-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Speaker</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cloud Innovation Summit</td>
+                <td>2024-10-15</td>
+                <td>Jane Doe</td>
+                <td class="success">
+                  <span class="success-items status-items">
+                    <span class="success-dot status-dot"></span>
+                    <span class="success-text status-text">Completed</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Blockchain Revolution Conference</td>
+                <td>2024-11-15</td>
+                <td>Dr. Peter Smith</td>
+                <td class="progress">
+                  <span class="progress-items status-items">
+                    <span class="progress-dot status-dot"></span>
+                    <span class="progress-text status-text">In Progress</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>All in Healthcare Symposium</td>
+                <td>2024-12-01</td>
+                <td>Dr. Aisha Malik</td>
+                <td class="success">
+                  <span class="success-items status-items">
+                    <span class="success-dot status-dot"></span>
+                    <span class="success-text status-text">Completed</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Future of Fintech Forum</td>
+                <td>2024-10-25</td>
+                <td>John Lee</td>
+                <td class="success">
+                  <span class="success-items status-items">
+                    <span class="success-dot status-dot"></span>
+                    <span class="success-text status-text">Completed</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Data Analytics in Business</td>
+                <td>2024-11-12</td>
+                <td>Rachel Moore</td>
+                <td class="success">
+                  <span class="success-items status-items">
+                    <span class="success-dot status-dot"></span>
+                    <span class="success-text status-text">Completed</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Sustainable Energy Expo</td>
+                <td>2024-09-28</td>
+                <td>Prof. Alan Green</td>
+                <td class="success">
+                  <span class="success-items status-items">
+                    <span class="success-dot status-dot"></span>
+                    <span class="success-text status-text">Completed</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Web3 Interfaces Workshop</td>
+                <td>2024-10-10</td>
+                <td>Kevin Adams</td>
+                <td class="progress">
+                  <span class="progress-items status-items">
+                    <span class="progress-dot status-dot"></span>
+                    <span class="progress-text status-text">In Progress</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Cybersecurity for Startups</td>
+                <td>2024-11-19</td>
+                <td>Emily Zhang</td>
+                <td class="success">
+                  <span class="success-items status-items">
+                    <span class="success-dot status-dot"></span>
+                    <span class="success-text status-text">Completed</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Smart Cities Forum</td>
+                <td>2024-10-18</td>
+                <td>Dr. Maria Hernandez</td>
+                <td class="progress">
+                  <span class="progress-items status-items">
+                    <span class="progress-dot status-dot"></span>
+                    <span class="progress-text status-text">In Progress</span>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Tech Safari</td>
+                <td>2024-09-30</td>
+                <td>Guest Panel</td>
+                <td class="progress">
+                  <span class="progress-items status-items">
+                    <span class="progress-dot status-dot"></span>
+                    <span class="progress-text status-text">In Progress</span>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </section>
 
