@@ -9,6 +9,6 @@ KEY FEATURES:
   
   >>> And finally a table section. Each table data item has a modal pop-up that open when any of the table data is clicked. And the modal card has dynamic texts that shows the name, date, and description of the data clicked.
 
->> Dark mode is fully functional.
+>> Mobile responsiveness is set for mobile screens below 430px.
 
-IMPORTANCE NOTICE: This project is not yet complete. I am still working on the responsiveness of the dashboard for mobile view, which will be uploaded once complete. I intend to complete the mobile view of the page within the next 24 hours.
+>> Dark mode is fully functional.
