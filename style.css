@@ -9,6 +9,7 @@
 }
 
 :root {
+  --primary: #8576FF;
   --body-color: #E4E9F7;
   --primary-color: #8576FF;
   --primary-color-dark: #484554;
@@ -29,6 +30,7 @@
   --failure-color: #F43F5E;
   --progress-color: #3B82F6;
   --display-text-color: #334155;
+  --modal-footer-bg-color: #F8FAFC;
 
   /* Transition */
   --tran-02: all 0.2s ease;
@@ -57,6 +59,7 @@ body.dark {
   --text-hover-color: #FFF;
   --table-header-color: #6A6676;
   --display-text-color: #FFF;
+  --modal-footer-bg-color: #ADA9BB;
 }
 
 /* ====== Reusable CSS ====== */
@@ -603,6 +606,7 @@ td {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  cursor: pointer;
 }
 
 th, td {
