@@ -12,6 +12,12 @@ const ctx = document.getElementById("barChart");
 const carouselBtn = document.querySelectorAll("[data-carousel-button]");
 const lines = document.querySelectorAll(".line");
 const carousel = document.querySelector(".carousel");
+const tableRows = document.querySelectorAll(".table-body tbody tr");
+const modal = document.getElementById("event-modal");
+const modalEventName = document.getElementById("modal-event-name");
+const modalEventDate = document.getElementById("modal-event-date");
+const modalEventDescription = document.getElementById("modal-event-description");
+
 
 const slideInterval = 5000; // Auto-slide interval in milliseconds (5 seconds)
 let autoSlideInterval; // To store the interval ID
@@ -163,6 +169,32 @@ carousel.addEventListener("mouseenter", () => {
 
 carousel.addEventListener("mouseleave", () => {
   startAutoSlide(); // Resume when the mouse leaves
+});
+
+// Modal - Open and populate on row click
+tableRows.forEach(row => {
+  row.addEventListener('click', () => {
+    const eventName = row.cells[0].textContent;
+    const eventDate = row.cells[1].textContent;
+    modalEventName.textContent = eventName;
+    modalEventDate.textContent = eventDate;
+    // Set a default or retrieved description here
+    modalEventDescription.textContent = "Sample description for " + eventName;
+
+    modal.style.display = 'flex';
+  });
+});
+
+// Close modal on click of close button
+document.querySelector('.close-btn').addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close modal if clicked outside
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
 });
 
 // Initial setup
