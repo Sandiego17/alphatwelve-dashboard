@@ -679,3 +679,67 @@ body.dark .progress .progress-items {
   height: 100%;
   margin-left: 26px;
 }
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pagination .page-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: var(--home-text-color);
+  height: 24px;
+  width: 24px;
+}
+
+.pagination .pagination-btn {
+  background-color: var(--section-color);
+  border: 1px solid var(--pagination-btn-border);
+  border-radius: 2px;
+  height: 36px;
+  width: 36px;
+}
+
+.pagination .left {
+  background-color: var(--pagination-btn-border);
+}
+
+.pagination-btn .icon {
+  filter: invert(88%) sepia(8%) saturate(292%) hue-rotate(174deg) brightness(98%) contrast(97%);
+}
+
+.pagination .page-btn.active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.pagination .page-btn:nth-child(3):hover,
+.pagination .page-btn:nth-child(4):hover {
+  background-color: var(--menu-hover-color);
+}
+
+.rows-dropdown-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.rows-dropdown-wrapper label {
+  color: var(--display-text-color);
+  margin-right: 6px;
+}
+
+.rows-dropdown {
+  margin: 0;
+}
+
