@@ -24,6 +24,11 @@
   --home-header: #000;
   --toggle-color: #DDD;
   --text-hover-color: #8576FF;
+  --table-header-color: #F1F5F9;
+  --success-color: #10B981;
+  --failure-color: #F43F5E;
+  --progress-color: #3B82F6;
+  --display-text-color: #334155;
 
   /* Transition */
   --tran-02: all 0.2s ease;
@@ -50,6 +55,8 @@ body.dark {
   --toggle-color: #FFF;
   --menu-hover-color: #8576FF;
   --text-hover-color: #FFF;
+  --table-header-color: #6A6676;
+  --display-text-color: #FFF;
 }
 
 /* ====== Reusable CSS ====== */
@@ -165,8 +172,14 @@ header .image-text .header-text {
   }
 }
 
+body.dark .aside-link:hover .icon,
+body.dark .export-button .export-icon,
+body.dark .card-icon {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
 .notification-count {
-  background: red;
+  background: var(--failure-color);
   border-radius: 50%;
   color: #FFF;
   height: 34px;
@@ -319,11 +332,11 @@ body.dark .event-section .event-card {
 }
 
 .growth .rise {
-  color: #10B981;
+  color: var(--success-color);
 }
 
 .growth .decline {
-  color: #F43F5E;
+  color: var(--failure-color);
 }
 
 .container .section-caption {
