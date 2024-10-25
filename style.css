@@ -743,3 +743,133 @@ body.dark .progress .progress-items {
   margin: 0;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: var(--section-color);
+  height: 380px;
+  width: 440px;
+  color: var(--home-text-color);
+  position: relative;
+}
+
+.close-btn {
+  background-color: var(--section-color);
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.dark .close-btn {
+  background-color: #ADA9BB;
+  border: none;
+  color: #484554;
+}
+
+.event-card-speakers,
+.modal-event-description,
+.modal-event-name,
+.modal-title {
+  padding: 22px 24px 0 24px;
+}
+
+.modal-title {
+  color: var(--home-header);
+}
+
+.modal-event-name .name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.modal-event-name .date,
+.modal-event-description strong {
+  font-size: 14px;
+}
+
+.modal-event-name span,
+.modal-event-description span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.event-card-speakers .avatars {
+  position: relative;
+}
+
+.event-card-speakers .speakers-description {
+  color: var(--display-text-color);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-top: 38px;
+}
+
+.avatars .avatar {
+  position: absolute;
+  border: 2px solid var(--section-color);
+  border-radius: 50%;
+}
+
+.avatars .avatar-one {
+  z-index: 2;
+}
+
+.avatars .avatar-two {
+  left: 24px;
+  z-index: 1;
+}
+
+.avatars .avatar-three {
+  left: 48px;
+}
+
+.modal-footer {
+  background-color: var(--modal-footer-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+  padding: 24px;
+}
+
+.modal-btn {
+  border-radius: 2px;
+  cursor: pointer;
+  height: 36px;
+  padding: 8px 12px;
+}
+
+.edit-btn {
+  background-color: #FFF;
+  color: #000;
+}
+
+.delete-btn {
+  background-color: var(--failure-color);
+  color: #FFF;
+}
+
+.complete-btn {
+  background-color: var(--primary);
+  color: #FFF;
+}
