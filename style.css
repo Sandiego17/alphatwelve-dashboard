@@ -74,6 +74,16 @@ body.dark {
   justify-content: center;
 }
 
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.justified {
+  display: flex;
+  justify-content: center;
+}
+
 /* ====== SideBar ====== */
 .sidebar {
   background: var(--section-color);
@@ -81,6 +91,10 @@ body.dark {
   width: 250px;
   padding: 8px;
   transition: var(--tran-05);
+}
+
+.sidebar .image-text .mobile-close-btn {
+  display: none;
 }
 
 .sidebar.collapse {
@@ -139,7 +153,8 @@ body.dark {
   align-items: center;
 }
 
-.sidebar .image-text .main-logo {
+.sidebar .image-text .main-logo,
+.home .mobile-nav-bar .main-logo {
   border-radius: 6px;
   width: 120px;
 }
@@ -553,8 +568,28 @@ body.dark .export-button,
   font-size: 14px;
 }
 
+.dropdown select {
+  background: none;
+  border: none;
+  color: var(--home-text-color);;
+  height: 100%;
+  width: 100%;
+}
+
 .date-dropdown {
   width: 88px;
+}
+
+.status-dropdown {
+  width: 100px;
+}
+
+.name-dropdown {
+  width: 96px;
+}
+
+.sort-dropdown {
+  width: 140px;
 }
 
 .display-text {
@@ -713,6 +748,10 @@ body.dark .progress .progress-items {
 
 .pagination .left {
   background-color: var(--pagination-btn-border);
+}
+
+body.dark .pagination .left {
+  background-color: var(--section-color);
 }
 
 .pagination-btn .icon {
