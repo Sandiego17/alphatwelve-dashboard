@@ -10,8 +10,8 @@
   <aside class="aside-container">
     <div class="sidebar">
       <header>
-        <div class="image-text">
-          <span class="logo-image">
+        <div class="image-text align-center">
+          <span class="logo-image align-center">
             <img src="./assets/images/alpha-logo.png" class="logo main-logo" alt="logo">
             <img src="./assets/images/alpha-logo-small.png" class="logo logo-small display-none" alt="logo-small">
           </span>
@@ -84,7 +84,7 @@
         <div class="bottom-content">
           <ul>
             <li class="mode">
-              <div class="moon-sun">
+              <div class="moon-sun align-center">
                 <img src="./assets/svgs/bx-moon.svg" class="icon theme-icon display-none" alt="moon">
                 <img src="./assets/svgs/bx-sun.svg" class="icon theme-icon" alt="sun">
               </div>
@@ -94,6 +94,15 @@
               <div class="toggle-switch centered">
                 <span class="switch"></span>
               </div>
+            </li>
+            <li class="user-link">
+              <a href="#" class="link-item">
+                <img src="./assets/svgs/user-avatar.svg" class="icon" alt="settings">
+                <div class="text user">
+                  <span>Rudra Devi</span>
+                  <span>rudra.devi@gmail.com</span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -116,9 +125,9 @@
             Total Events
             <img src="./assets/svgs/information.svg" class="card-icon" alt="card-icon">
           </h3>
-          <p class="card-body">
+          <p class="card-body align-center">
             <span class="count">100,000</span> 
-            <span class="growth">
+            <span class="growth align-center">
               <img src="./assets/svgs/arrow-up-right.svg" alt="">
               <span class="rise">+5.0%</span>
             </span>
@@ -129,9 +138,9 @@
             Active Speakers
             <img src="./assets/svgs/information.svg" class="card-icon" alt="card-icon">
           </h3>
-          <p class="card-body">
+          <p class="card-body align-center">
             <span class="count">25</span> 
-            <span class="growth">
+            <span class="growth align-center">
               <img src="./assets/svgs/arrow-down-right.svg" alt="">
               <span class="decline">-5.0%</span>
             </span>
@@ -142,9 +151,9 @@
             Total Registrations
             <img src="./assets/svgs/information.svg" class="card-icon" alt="card-icon">
           </h3>
-          <p class="card-body">
+          <p class="card-body align-center">
             <span class="count">300</span> 
-            <span class="growth">
+            <span class="growth align-center">
               <img src="./assets/svgs/arrow-up-right.svg" alt="">
               <span class="rise">+5.0%</span>
             </span>
@@ -155,9 +164,9 @@
             Total Revenue
             <img src="./assets/svgs/information.svg" class="card-icon" alt="card-icon">
           </h3>
-          <p class="card-body">
+          <p class="card-body align-center">
             <span class="count">$500,000</span> 
-            <span class="growth">
+            <span class="growth align-center">
               <img src="./assets/svgs/arrow-up-right.svg" alt="">
               <span class="rise">+5.0%</span>
             </span>
@@ -169,7 +178,7 @@
       <h1 class="section-caption">Event Registrations per month</h1>
       <div class="event-section">
         <div class="event-card centered chart-card">
-          <div class="chart">
+          <div class="chart align-center">
             <canvas id="barChart"></canvas>
           </div>
         </div>
@@ -214,8 +223,8 @@
                 </div>
               </li>
             </ul>
-            <!-- Dots for each slide -->
-            <div class="carousel-indicators">
+            <!-- Short dash lines for each slide -->
+            <div class="carousel-indicators justified">
               <span class="line" data-slide="0"></span>
               <span class="line" data-slide="1"></span>
               <span class="line" data-slide="2"></span>
@@ -227,8 +236,8 @@
     <div class="container">
       <h1 class="section-caption">Events History</h1>
       <div class="event-table">
-        <div class="table-menu">
-          <div class="search-bar-wrapper">
+        <div class="table-menu space-between">
+          <div class="search-bar-wrapper align-center">
             <input type="text" class="search-bar" placeholder="Search..." />
             <img src="./assets/svgs/searchbar.svg" class="search-icon" alt="">
           </div>
@@ -262,7 +271,7 @@
           </div>
           <div class="table-menu-btns align-center">
             <button class="menu-button">⁝</button>
-            <button class="export-button">
+            <button class="export-button align-center">
               <img src="./assets/svgs/download.svg" class="export-icon" alt="">
               <span>Export</span>
             </button>
@@ -286,7 +295,7 @@
                 <td class="success">
                   <span class="success-items status-items">
                     <span class="success-dot status-dot"></span>
-                    <span class="success-text status-text">Completed</span>
+                    <span class="success-text status-text align-center">Completed</span>
                   </span>
                 </td>
               </tr>
@@ -297,7 +306,7 @@
                 <td class="progress">
                   <span class="progress-items status-items">
                     <span class="progress-dot status-dot"></span>
-                    <span class="progress-text status-text">In Progress</span>
+                    <span class="progress-text status-text align-center">In Progress</span>
                   </span>
                 </td>
               </tr>
@@ -308,7 +317,7 @@
                 <td class="success">
                   <span class="success-items status-items">
                     <span class="success-dot status-dot"></span>
-                    <span class="success-text status-text">Completed</span>
+                    <span class="success-text status-text align-center">Completed</span>
                   </span>
                 </td>
               </tr>
@@ -319,7 +328,7 @@
                 <td class="success">
                   <span class="success-items status-items">
                     <span class="success-dot status-dot"></span>
-                    <span class="success-text status-text">Completed</span>
+                    <span class="success-text status-text align-center">Completed</span>
                   </span>
                 </td>
               </tr>
@@ -330,7 +339,7 @@
                 <td class="success">
                   <span class="success-items status-items">
                     <span class="success-dot status-dot"></span>
-                    <span class="success-text status-text">Completed</span>
+                    <span class="success-text status-text align-center">Completed</span>
                   </span>
                 </td>
               </tr>
@@ -341,7 +350,7 @@
                 <td class="success">
                   <span class="success-items status-items">
                     <span class="success-dot status-dot"></span>
-                    <span class="success-text status-text">Completed</span>
+                    <span class="success-text status-text align-center">Completed</span>
                   </span>
                 </td>
               </tr>
@@ -352,7 +361,7 @@
                 <td class="progress">
                   <span class="progress-items status-items">
                     <span class="progress-dot status-dot"></span>
-                    <span class="progress-text status-text">In Progress</span>
+                    <span class="progress-text status-text align-center">In Progress</span>
                   </span>
                 </td>
               </tr>
@@ -363,7 +372,7 @@
                 <td class="success">
                   <span class="success-items status-items">
                     <span class="success-dot status-dot"></span>
-                    <span class="success-text status-text">Completed</span>
+                    <span class="success-text status-text align-center">Completed</span>
                   </span>
                 </td>
               </tr>
@@ -374,7 +383,7 @@
                 <td class="progress">
                   <span class="progress-items status-items">
                     <span class="progress-dot status-dot"></span>
-                    <span class="progress-text status-text">In Progress</span>
+                    <span class="progress-text status-text align-center">In Progress</span>
                   </span>
                 </td>
               </tr>
@@ -385,15 +394,15 @@
                 <td class="progress">
                   <span class="progress-items status-items">
                     <span class="progress-dot status-dot"></span>
-                    <span class="progress-text status-text">In Progress</span>
+                    <span class="progress-text status-text align-center">In Progress</span>
                   </span>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="table-footer">
-          <div class="pagination">
+        <div class="table-footer space-between">
+          <div class="pagination align-center">
             <button class="pagination-btn left">
               <span class="prev">
                 <img src="./assets/svgs/chevron-left.svg" class="icon" alt="">
@@ -408,7 +417,7 @@
               </span>
             </button>
           </div>
-          <div class="rows-dropdown-wrapper">
+          <div class="rows-dropdown-wrapper align-center">
             <label for="rows-dropdown">Show:</label>
             <select class="dropdown rows-dropdown">
               <option>10 rows</option>
@@ -441,7 +450,7 @@
               <p>300 Attendees</p>
             </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer space-between">
             <button class="modal-btn edit-btn">Edit</button>
             <div>
               <button class="modal-btn delete-btn">Delete</button>
