@@ -14,6 +14,7 @@ KEY FEATURES:
 >> Dark theme mode is fully functional.
 
 Here are a few screenshots to show what the Dashboard looks like across different screens and in dark theme mode:
+
 ![Screenshot (330)](https://github.com/user-attachments/assets/e8351cd2-dd5f-4050-a49c-b4bab4b50c19)
 ![Screenshot (344)](https://github.com/user-attachments/assets/2a1e97ae-2a0b-431e-88be-a005c92b018a)
 ![Screenshot (343)](https://github.com/user-attachments/assets/0a5044f3-dbac-4b8c-903a-168e927cd51c)
