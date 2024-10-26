@@ -1020,4 +1020,36 @@ body.dark .close-btn {
   .rows-dropdown-wrapper label {
     display: none;
   }
+
+  .modal-content {
+    height: 470px;
+    width: 78%;
+  }
+
+  .modal-event-name .name {
+    font-size: 14px;
+  }
+
+  .modal-event-name .date,
+  .modal-event-name span,
+  .modal-event-description strong,
+  .modal-event-description span,
+  .event-card-speakers .speakers-description {
+    font-size: 12px;
+  }
+
+  .modal-footer {
+    height: 170px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .modal-footer,
+  .modal-footer div {
+    display: block;
+  }
+
+  .modal-footer div .modal-btn {
+    margin-top: 12px;
+  }
 }
