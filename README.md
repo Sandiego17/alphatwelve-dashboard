@@ -11,4 +11,4 @@ KEY FEATURES:
 
 >> Mobile responsiveness is set for mobile screens below 430px.
 
->> Dark mode is fully functional.
+>> Dark theme mode is fully functional.
