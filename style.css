@@ -282,6 +282,11 @@ body.dark .switch::before {
   left: 24px;
 }
 
+.user-link .user {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ====== HomePage View ====== */
 .home {
   background-color: var(--home-color);
